@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  credit: 1
+  subtotal: 1.5
+  tax: 1.5
+  tip: 1.5
+
+two:
+  credit: 1
+  subtotal: 1.5
+  tax: 1.5
+  tip: 1.5
