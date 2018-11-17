@@ -1,6 +1,14 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Managers</h1>
+<% if manager_signed_in? %>
+<button><%= link_to 'Sign out', destroy_manager_session_path %></button>
+<% end %>
+<% if !manager_signed_in? %>
+<button><%= link_to 'Sign in', new_manager_session_path %></button>
+<% end %>
+
+<button type="button" class="btn btn-secondary btn-lg btn-block">Customer</button>
 
 <button type="button" class="btn btn-secondary btn-lg btn-block">Customer</button>
 <button type="button" class="btn btn-secondary btn-lg btn-block">Waitstaff</button>

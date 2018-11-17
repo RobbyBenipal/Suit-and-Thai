@@ -209,6 +209,8 @@ Waiter.create([{
 	password: 'eddy_password',
 }])
 
+
+
 p 'Created #{Menu.count} menus'
 p 'Created #{Table.count} tables'
 p 'Created #{Manager.count} manager'

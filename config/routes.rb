@@ -9,4 +9,5 @@ Rails.application.routes.draw do
 
   root 'pages#ManagerOptions'
   get 'pages/NutritionalInfo'
+
 end
