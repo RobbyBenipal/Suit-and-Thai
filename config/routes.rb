@@ -9,5 +9,8 @@ Rails.application.routes.draw do
 
   root 'pages#ManagerOptions'
   get 'pages/NutritionalInfo'
-
+  get "pages/CustomerHomepage" => "pages#CustomerHomepage"
+  get 'pages/Game1'
+  get 'pages/Game2'
+  get 'pages/Game3'
 end

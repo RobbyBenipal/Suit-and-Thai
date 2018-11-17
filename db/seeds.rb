@@ -68,7 +68,7 @@ Product.create([{
 {
 	name: 'Green Tea Ice Cream',
 	description:'Matcha | Coconut Shavings',
-	price:'14.50',
+	price:'14.99',
 },
 {
 	name: 'Hot Tea',
