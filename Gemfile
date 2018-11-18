@@ -14,7 +14,7 @@ gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
-gem 'duktape'
+#gem 'duktape'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
@@ -25,7 +25,13 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-gem 'execjs'
+gem 'bootstrap', '~> 4.1.3'
+gem 'jquery-rails'
+gem 'execjs' 
+gem 'nested_form_fields'
+gem 'carrierwave', '~> 1.0'
+gem 'devise'
+gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
