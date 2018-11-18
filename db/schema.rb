@@ -13,7 +13,7 @@
 ActiveRecord::Schema.define(version: 2018_11_17_020727) do
 
   create_table "categories", force: :cascade do |t|
-    t.string "title"
+    t.string "title", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -27,7 +27,7 @@ ActiveRecord::Schema.define(version: 2018_11_17_020727) do
 
   create_table "payments", force: :cascade do |t|
     t.integer "credit"
-    t.float "subtotal"
+    t.float "subtotal", null: false
     t.float "tax"
     t.float "tip"
     t.datetime "created_at", null: false
@@ -37,8 +37,8 @@ ActiveRecord::Schema.define(version: 2018_11_17_020727) do
   end
 
   create_table "product_categories", force: :cascade do |t|
-    t.integer "product_id"
-    t.integer "category_id"
+    t.integer "product_id", null: false
+    t.integer "category_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["category_id"], name: "index_product_categories_on_category_id"
@@ -46,9 +46,9 @@ ActiveRecord::Schema.define(version: 2018_11_17_020727) do
   end
 
   create_table "products", force: :cascade do |t|
-    t.string "name"
+    t.string "name", null: false
     t.text "description"
-    t.float "price"
+    t.float "price", null: false
     t.string "image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
