@@ -1,6 +1,222 @@
 <p id="notice"><%= notice %></p>
 
-<h2 class="menu-section-title">MENU</h2>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  .menu {
+    margin-bottom: 15px;
+    max-width: 1200px;
+      margin: 0 auto;
+  }
+  .menu_restName {
+    text-align: center;
+      font-size: 70px;
+      margin-top: 0;
+  }
+  .menu_title {
+    text-align: center;
+  }
+  .menu_section {
+    margin-bottom: 30px;
+  }
+  .menu_section h3 {
+    font-style: italic;
+  }
+  .menu_item {
+    margin: 0 15px;
+    position: relative;
+  }
+  .menu_item h4 {
+    margin-bottom: 0px;
+  }
+  .price {
+    display: block;
+    float: right;
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    font-weight: bold;
+  }
+  .description {
+    margin-top: 5px;
+    font-style: italic;
+    display: inline-block;
+    max-width: 50%;
+  }
+  hr {
+    border: none;
+      border-top: 1px dotted black;
+      margin-top: -20px;
+  }
+  footer:not(.app-footer) {
+    text-align: center;
+      font-size: 11px;
+    font-style: italic;
+  }
+  @media (max-width: 575px) {
+    .menu_title {
+      text-align: center;
+      font-size: 30px;
+    }
+    .menu_section h3 {
+      text-align: center;
+        font-size: 30px;
+    }
+    .menu_item {
+      text-align: center;
+    }
+    .price {
+      float: none;
+      position: static;
+      margin-top: 15px;
+    }
+    hr {
+      display: none;
+    }
+  }
+</style>
+
+<body>
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand"
+  <%= link_to 'Suit & Thai'%>
+  </a>
+  <form class="form-inline">
+    <button class="btn btn-sm btn-outline-primary"type="button">
+      <%= link_to 'Drink Refill' %>
+    </button>
+
+    <button class="btn btn-sm btn-outline-primary" type="button">
+      <%= link_to 'Request Waiter' %>
+    </button>
+      <button class="btn btn-sm btn-outline-primary float-left" type="button">
+        <%= link_to 'Pay Now/ View Order' %>
+      </button>
+    </form>
+
+  </form>
+</nav>
+<section class="menu"><h1 class="menu_restName">Menu</h1><div class="menu_section menu_section_15425234466">
+<h3>Appetizer</h3>
+<br>
+        <div class="menu_item menu_item_15425234566">
+          <h4 class="name">Veggie Spring Rolls</h4>
+          <span class="price">$14.99</span>
+          <p class="description">Fried Rice Paper Rolls | Glass Noodles | Mixed Vegetable | Sweet &amp; Sour Sauce. (4 pieces)</p>
+          <hr>
+        </div>
+      
+        <div class="menu_item menu_item_15425235399">
+          <h4 class="name">Corn Patties</h4>
+          <span class="price">$14.99</span>
+          <p class="description">Crispy Corn | Sweet &amp; Sour Sauce. (4 pieces)</p>
+          <hr>
+        </div>
+      
+        <div class="menu_item menu_item_15425235649">
+          <h4 class="name">Gyoza</h4>
+          <span class="price">$15.99</span>
+          <p class="description">undefined</p>
+          <hr>
+        </div>
+      </div><div class="menu_section menu_section_15425238883">
+      <br>
+      <h3>Entree's</h3>
+      <br>
+        <div class="menu_item menu_item_15425239005">
+          <h4 class="name">Chicken Pad Thai</h4>
+          <span class="price">$19.99</span>
+          <p class="description">Flat Rice Noodles | Broccoli | Egg | Carrots | Black Soy Sauce</p>
+          <hr>
+        </div>
+      
+        <div class="menu_item menu_item_15425240058">
+          <h4 class="name">Pad See Ew</h4>
+          <span class="price">$19.99</span>
+          <p class="description">Rice noodles | Egg | Bean Sprouts | Tamarind Sauce | Green Onion | Peanuts</p>
+          <hr>
+        </div>
+      
+        <div class="menu_item menu_item_15425240396">
+          <h4 class="name">Yellow Curry</h4>
+          <span class="price">$19.99</span>
+          <p class="description">Carrot | Potato | Yellow Onion | Coconut Milk | Yellow Curry Paste</p>
+          <hr>
+        </div>
+      </div><div class="menu_section menu_section_15425240757">
+      <br>
+      <h3>Kid's Menu</h3>
+      <br>
+        <div class="menu_item menu_item_15425240988">
+          <h4 class="name">Beef &amp; Broccoli</h4>
+          <span class="price">$15.99</span>
+          <p class="description">White or brown steamed rice</p>
+          <hr>
+        </div>
+      
+        <div class="menu_item menu_item_15425241420">
+          <h4 class="name">Orange Chicken</h4>
+          <span class="price">$15.99</span>
+          <p class="description">White or brown steamed rice</p>
+          <hr>
+        </div>
+      
+        <div class="menu_item menu_item_15425241754">
+          <h4 class="name">Fried Rice</h4>
+          <span class="price">$15.99</span>
+          <p class="description">Scrambled eggs | Carrots | Peas</p>
+          <hr>
+        </div>
+      </div><div class="menu_section menu_section_15425242225">
+      <br>
+      <h3>Desserts</h3>
+      <br>
+        <div class="menu_item menu_item_15425242296">
+          <h4 class="name">Mango Sticky Rice</h4>
+          <span class="price">$15.99</span>
+          <p class="description">Mango | Sweet Sticky Rice | Coconut Milk</p>
+          <hr>
+        </div>
+      
+        <div class="menu_item menu_item_15425242986">
+          <h4 class="name">Green Tea Ice Cream</h4>
+          <span class="price">$14.99</span>
+          <p class="description">Matcha | Coconut Shavings</p>
+          <hr>
+        </div>
+      
+        <div class="menu_item menu_item_15425243392">
+          <h4 class="name">Custard Sticky Rice</h4>
+          <span class="price">$14.99</span>
+          <p class="description">Egg custard | Sweet Sticky Rice | Coconut Milk</p>
+          <hr>
+        </div>
+      </div><div class="menu_section menu_section_15425244089">
+      <br>
+      <h3>Beverages</h3>
+      <br>
+        <div class="menu_item menu_item_15425244174">
+          <h4 class="name">Hot Tea</h4>
+          <span class="price">$12.99</span>
+          <p class="description">Jasmine | Ginger | Green</p>
+          <hr>
+        </div>
+      
+        <div class="menu_item menu_item_15425244507">
+          <h4 class="name">Iced Tea</h4>
+          <span class="price">$12.99</span>
+          <p class="description">Thai | Sweet | Unsweet</p>
+          <hr>
+        </div>
+      
+        <div class="menu_item menu_item_15425244773">
+          <h4 class="name">Soft Drinks</h4>
+          <span class="price">$11.99</span>
+          <p class="description">Coke, Diet Coke, Sprite and Dr.Pepper (Refills available for dine-in)</p>
+          <hr>
+        </div>
+      </div></section><footer class="menu_containsRaw">*Consuming raw or undercooked meats, poultry, seafood, shellfish, eggs or unpasteurized milk may increase your risk of foodborne illness.</footer>
+</body>
 
 <div class="menu-body">
   <div class="menu-selection">
