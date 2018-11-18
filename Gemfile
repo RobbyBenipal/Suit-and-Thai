@@ -31,6 +31,7 @@ gem 'execjs'
 gem 'nested_form_fields'
 gem 'carrierwave', '~> 1.0'
 gem 'devise'
+gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
