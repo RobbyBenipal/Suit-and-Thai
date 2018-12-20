@@ -12,13 +12,13 @@ Things you may want to cover:
   Ruby 2.3.3
   Rails 5.2.1
 
-* Database creation
+* Database creation:
   Built in database with SQLite3
 
-* Services
+* Services:
   Add to order, checkout, remove/edit
   
-* Technologies Used
+* Technologies Used:
   Ruby on Rails
   HTML5 and CSS3
   Heroku
